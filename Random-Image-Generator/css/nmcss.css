@@ -1,0 +1,200 @@
+/* Base styling */
+body {
+    height: 100%;
+    background: rgb(94,196,34);
+    background: linear-gradient(56deg, rgba(94,196,34,1) 0%, rgba(9,121,37,1) 37%, rgba(0,212,255,1) 100%);
+    text-align: center;
+    position: relative;
+}
+.background {
+    position: absolute;
+    width: 1500px;
+    left: 200px;
+    opacity: 0.2;
+    filter: invert(40%) sepia(100%) saturate(500%) hue-rotate(140deg) brightness(100%) contrast(80%);
+}
+
+/* Gecko animation and styling */
+.header-overlay {
+    position: absolute;
+    z-index: 2;
+    top: 20px;
+    left: -100px;
+    height: 90px;  
+    width: 120px; 
+    animation: walk 15s linear infinite;
+    
+}
+@keyframes walk {
+    0% {
+        top: 20px;
+        left: -100px;
+    }
+    5%{transform: rotate(-15deg);
+        top:20px;
+    }
+    10%{transform: rotate(10deg);
+        top:30px;}
+    15%{transform: rotate(-20deg);
+        top:10px;}
+    20%{transform: rotate(15deg);
+        top:20px;}
+    25%{transform: rotate(-20deg);
+        top:16px;}
+    30%{transform: rotate(20deg);
+        top:23px;}
+    35%{transform: rotate(-20deg);
+        top:18px;}
+    40%{transform: rotate(20deg);
+        top:20px;}
+    45%{transform: rotate(-20deg);
+        top:17px;}
+    50%{transform: rotate(20deg);
+        top:24px;}
+    55%{transform: rotate(-20deg);
+        top:20px;}
+    60%{transform: rotate(20deg);
+        top:20px;}
+    65%{transform: rotate(-20deg);
+        top:20px;}
+    70%{transform: rotate(20deg);
+        top:23px;}
+    75%{transform: rotate(-20deg);
+        top:15px;}
+    80%{transform: rotate(20deg);
+        top:21px;}
+    85%{transform: rotate(-20deg);
+        top:14px;}
+    90%{transform: rotate(20deg);
+        top:20px;}
+    95%{transform: rotate(-20deg);
+        top:20px;}
+    100%{
+        top: 20px;
+        left: 1000px;
+    }
+}
+/* Title styling */
+.h1 {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: -100px;
+    left: 20%;
+color: rgb(21, 133, 40);
+text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+opacity: 0.3;
+font-size: 100px;
+margin-bottom: 20px;
+}
+/* z-indexes fopr gecko animation */
+.geck {
+    position: absolute;
+}
+.g1 {
+    left: 0px;
+    z-index: 1;
+}
+.g2{
+    left: 162px;
+    z-index: 3;
+}
+.g3{
+    width: 150px;
+    left: 334px;
+    z-index: 1;
+}
+.g4{
+    left: 500px;
+    z-index: 3;
+}
+.g5{
+    width: 220px;
+    left: 665px;
+    z-index: 1;
+}
+.g6{
+    left: 880px;
+    z-index: 3;
+}
+/* All saved images styling */
+.all-img {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    width: 350px;
+    height: 800px;
+    outline: 1px solid rgba(1, 41, 8, 0.322);
+    border: 1px solid rgba(255,255,255,0.1);
+    overflow: scroll;
+}
+/* Main contatiner styling */
+.img-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1600px;
+    height: 1300px;
+    outline: 1px solid rgba(1, 41, 8, 0.322);
+    border: 1px solid rgba(255,255,255,0.1);
+    margin: 100px auto 0;
+
+}
+/* Main image viewer styling */
+.image-box {
+    width: 800px;
+    height: 800px;
+    outline: 1px solid rgba(0,0,0,0.25);
+    border: 1px solid rgba(255,255,255,0.1);
+    margin: 10px auto;
+
+}
+/* button styling */
+button {
+    position: absolute;
+    width: 150px;
+    height: 80px;
+    outline: 1px solid rgba(0,0,0,0.25);
+    border: 1px solid rgba(255,255,255,0.1);
+    background-color: rgba(21, 133, 40, 0);
+    box-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+   
+}
+.btn1 {
+top: 40px;
+left: 140px;    
+}
+.btn2 {
+top: 160px;
+left: 140px;
+}
+button:hover {
+    background-color: rgba(150, 194, 157, 0.651);
+}
+/* Email input styling */
+.email {
+   position: absolute;
+   top: 280px;
+   left: 60px;
+    }
+    
+.email-input {
+    width: 300px;
+    height: 20px;
+}
+/* Saved image box styling */
+.save-img-box {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 1400px;
+    height: 400px;
+    outline: 1px solid rgba(0,0,0,0.25);
+    border: 1px solid rgba(255,255,255,0.1);
+    margin: 30px auto;
+}
+.box {
+height: 400px;
+width: 400px;
+}
